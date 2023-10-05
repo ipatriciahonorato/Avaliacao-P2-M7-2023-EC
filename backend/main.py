@@ -6,10 +6,10 @@ import psycopg2
 
 # Constantes
 DB_USER = "postgres"
-DB_PASSWORD = "postgres"
+DB_PASSWORD = "#Bazinga12"
 DB_HOST = "database-prova2.cde8ckzptnur.us-east-1.rds.amazonaws.com"
 DB_PORT = "5432"
-DB_NAME = "#Bazinga12"
+DB_NAME = "postgres"
 
 # Conexão com o banco
 con = psycopg2.connect(
