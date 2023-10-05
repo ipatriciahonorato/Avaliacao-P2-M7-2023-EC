@@ -13,6 +13,14 @@ A configuração da instância foi feita pelo terminal do computador no Ubuntu. 
 Para a configuração da instância do backend, foi-se necessário clonar o repositório do github, realizar a instalação do arquivo requirements.txt e uvicorn. 
 ![EC2 backend](https://github.com/ipatriciahonorato/Avaliacao-P2-M7-2023-EC/blob/main/media/instanci%20back.png)
 
+### Configuração do Banco de Dados RDS
+
+O Banco de dados em RDS foi criado em postgres.
+
+![banco 1](https://github.com/ipatriciahonorato/Avaliacao-P2-M7-2023-EC/blob/main/media/instancia%20front.png)
+![banco 2](https://github.com/ipatriciahonorato/Avaliacao-P2-M7-2023-EC/blob/main/media/rds.png)
+
+
 ### Alteração dos script
 
 1) main.py
