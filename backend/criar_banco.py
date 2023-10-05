@@ -28,8 +28,11 @@ cur.execute(
         titulo VARCHAR(255) NOT NULL,
         descricao TEXT NOT null,
         data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-    );"""
+    );"""   
 )
+
+# Salva as alterações
+con.commit()
 
 # Fecha a conexão
 con.close()
