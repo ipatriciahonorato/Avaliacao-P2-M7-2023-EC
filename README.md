@@ -1,23 +1,34 @@
-# Template para avaliação P2
+# Avaliação P2
 
-Saída esperada após execução do programa:
+#### Nome: Patricia Honorato Moreira
+#### Turma: 2° ano de engenharia da computação
 
-<img src="./media/tela-front.png" display="flex">
+### Configuração da Instância do frontend
 
-# IMPORTANTE:
+A configuração da instância foi feita pelo terminal do computador no Ubuntu. Nela foi instalado o Apache Server e clonado o repositório do github com os códigos alterados. 
 
-Para colocar o frontend para funcionar, colocar uma máquina EC2 rodando o Apache WebServer.
-Para isso, instalar dentro da EC2:
+### Configuração da Instância do backend
 
-```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install apache2
-# os arquivos do projeto devem estar em /var/www/html
-git clone https://github.com/Murilo-ZC/Avaliacao-P2-M7-2023-EC.git
-sudo cp ./Avaliacao-P2-M7-2023-EC/frontend /var/www/html
-```
+Para a configuração da instância do backend, foi-se necessário clonar o repositório do github, realizar a instalação do arquivo requirements.txt e uvicorn. 
 
-Aqui pessoal, os arquivos já estaram disponíveis na porta 80, não necessário redirecionar.
+### Alteração dos script
 
-> IMPORTANTE: Verificar as rotas e utilziar o seu próprio repositório com as modificações realizadas.
+1) main.py
+No código main.py foi-se alterado as credenciais e link para acesso do banco de dados
+
+2) criar_banco.py
+
+Nesse arquivo foi adicionado o trecho de código "con.commit()" para permitir a criação do banco de dados sem ser apenas manualmente pelo dbeaver. 
+
+2) script.js
+
+Foi alterado o IP da máquina (instância do frontend) em cada rota.
+
+### Rodando a instância para ter acesso ao projeto
+
+É necessário inicializar a instância do backend (ec2-52-90-245-186.compute-1.amazonaws.com) com o comando: `uvicorn main:app --host 0.0.0.0` após estar na pasta do repositório no terminal do ubuntu. A instância funciona na porta 8000. 
+
+
+Com a instância funcionando é so repetir o mesmo processo para a instância do front end (ec2-54-152-183-17.compute-1.amazonaws.com) 
+
+Em seguida o projeto estará disponível conforme mostrado abaixo. Suas principais funcionalidades é permitir que o usuário apague e adicione notas na interface. 
